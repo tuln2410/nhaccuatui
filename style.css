@@ -120,10 +120,26 @@ header ul li a img {
     width: 100%;
 }
 .big-img {
-    background-image: url(https://avatar-nct.nixcdn.com/slideshow/2020/10/02/d/5/6/6/1601633174155_org.jpg);
+    background-image: url(https://avatar-nct.nixcdn.com/slideshow/2020/09/28/1/7/b/e/1601286518999_org.jpg);
     flex-basis: 100%;
     height: 340px;
 }
+#hot-album > a:nth-child(1):hover ~ .big-img {
+    background-image: url(https://avatar-nct.nixcdn.com/slideshow/2020/09/28/1/7/b/e/1601286518999_org.jpg);
+}
+#hot-album > a:nth-child(2):hover ~ .big-img {
+    background-image: url(https://avatar-nct.nixcdn.com/slideshow/2020/10/01/f/5/d/b/1601524694283_org.jpg);
+}
+#hot-album > a:nth-child(3):hover ~ .big-img {
+    background-image: url(https://avatar-nct.nixcdn.com/slideshow/2020/10/05/1/c/6/2/1601887687229_org.jpg);
+}
+#hot-album > a:nth-child(4):hover ~ .big-img {
+    background-image: url(https://avatar-nct.nixcdn.com/slideshow/2020/10/02/d/5/6/6/1601628236063_org.jpg);
+}
+#hot-album > a:nth-child(5):hover ~ .big-img {
+    background-image: url(https://avatar-nct.nixcdn.com/slideshow/2020/10/02/d/5/6/6/1601632988487_org.jpg);
+}
+
 /* ALBUM TODAY */
 
 #album-today ul {
@@ -515,7 +531,56 @@ header ul li a img {
     padding: 30px 0 10px;
 }
 
-
+/* LAST SECTION */
+#last-section li{
+    list-style: none;;
+}
+#last-section .container {
+    display: flex;
+    justify-content: space-between;
+}
+#last-section .container > div {
+    flex-basis: 1;
+}
+#last-section .container > div h5 {
+    font-size: 16px;
+    margin: 30px 0 15px;
+}
+#last-section .container div:not(:last-child) > ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#last-section .container div:not(:last-child) > ul li {
+    flex-basis: 40%;
+    padding: 10px 0;
+}
+#last-section .container > div:last-child p {
+    color: #3AAAED;
+    font-size: 14px;
+}
+#last-section .container .social {
+    display: flex;
+}
+#last-section .container .social li{
+    max-width: 30px;
+    margin: 0 10px;
+    height: auto;
+}
+#last-section .container .app {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+#last-section .container .app li{
+    max-width: 100px;
+}
+#last-section .container2 {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #CCCCCC;
+    padding: 15px 0 30px;
+}
 /* FOOTER */
 footer {
     background-color: #129DEE;
